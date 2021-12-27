@@ -41,7 +41,7 @@ namespace ParallelStringsProcessing.StringProcessors
                 }
                 else
                 {
-                    if (!_counts.TryAdd(symbol, 0))
+                    if (!_counts.TryAdd(symbol, 1))
                     {
                         throw new Exception("Failed to add key to the dictionary");
                     }
